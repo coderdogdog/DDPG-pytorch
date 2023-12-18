@@ -11,6 +11,7 @@ def evaluate_policy(env, model, turns=3, render=False):
             s_next, r, done, info = env.step(a)  # dw: dead&win(terminated); tr: truncated
             scores += r
             s = s_next
+            
             if render:
                 env.render()
     return scores / turns

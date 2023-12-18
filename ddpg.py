@@ -139,7 +139,6 @@ class ReplayBuffer:
         self.reward[self.ptr] = reward
         self.next_state[self.ptr] = next_state
         self.dw[self.ptr] = dw  # 0,0,0，...，1
-
         self.ptr = (self.ptr + 1) % self.max_size  # 存满了又重头开始存
         self.size = min(self.size + 1, self.max_size)
 

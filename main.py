@@ -7,9 +7,7 @@
 # @Project : DDPG_torch
 """
 python main.py
-
 tensorboard --logdir=runs
-
 python main.py --EnvIdex 0 --write False --render True --Loadmodel True --ModelIdex 100
 
 """
